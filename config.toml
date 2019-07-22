@@ -1,4 +1,4 @@
-baseurl = "https://attachmentgenie.com"
+baseurl = "/"
 title = "attachmentgenie.com"
 
 theme = "hugo-coder"

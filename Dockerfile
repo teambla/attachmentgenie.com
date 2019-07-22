@@ -22,7 +22,7 @@ WORKDIR /site
 RUN /hugo --minify --enableGitInfo
 
 # stage 2
-FROM nginx:1.17.1-alpine
+FROM nginx:1.17.1-alpine AS run
 
 WORKDIR /usr/share/nginx/html/
 
