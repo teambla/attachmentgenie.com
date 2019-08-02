@@ -1,18 +1,13 @@
 baseurl = "/"
 title = "attachmentgenie.com"
-
 theme = "hugo-coder"
-
 languagecode = "en"
 defaultcontentlanguage = "en"
-
 paginate = 20
 canonifyurls = true
-
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
 disqusShortname = "yourdiscussshortname"
 
 [params]
@@ -21,28 +16,14 @@ disqusShortname = "yourdiscussshortname"
     keywords = "blog,developer,personal"
     info = "Open Source Consultant"
     avatarurl = "images/avatar.jpg"
-    #footercontent = "Enter a text here."
-
     dateformat = "January 2, 2006"
-
     hideCredits = false
     hideCopyright = false
-
-    # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/luizdepra/hugo-coder/tree/"
-
     rtl = false
-
-    # Use inverted colors
     inverted = false
-
-    # Series see also post count
     maxSeeAlsoItems = 5
-
-    # Custom CSS
     custom_css = []
-    
-    # Custom JS
     custom_js = []
 
 [taxonomies]
@@ -55,6 +36,11 @@ disqusShortname = "yourdiscussshortname"
     icon = "fab fa-github"
     weight = 1
     url = "https://github.com/attachmentgenie/"
+[[params.social]]
+    name = "Slideshare"
+    icon = "fab fa-slideshare"
+    weight = 1
+    url = "https://www.slideshare.net/attachmentgenie/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
