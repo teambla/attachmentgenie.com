@@ -1,27 +1,33 @@
-baseurl = "/"
+baseURL = "/"
 title = "attachmentgenie.com"
 theme = "hugo-coder"
-languagecode = "en"
-defaultcontentlanguage = "en"
+languageCode = "en"
+defaultContentLanguage = "en"
 paginate = 20
-canonifyurls = true
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-disqusShortname = "yourdiscussshortname"
+pygmentsStyle = "b2"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+#disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Bram Vogelaar"
     description = "Bram Vogelaar's personal website"
     keywords = "blog,developer,personal"
     info = "CTO by day, Open Source Enthusiast by night"
-    avatarurl = "images/avatar.jpg"
-    dateformat = "January 2, 2006"
+    avatarURL = "images/avatar.jpg"
+    #gravatar = "john.doe@example.com"
+    #footerContent = "Enter a text here."
+    dateFormat = "January 2, 2006"
+    hideFooter = false
     hideCredits = false
     hideCopyright = false
+    since = 2019
     commit = "https://github.com/luizdepra/hugo-coder/tree/"
     rtl = false
     inverted = false
+    colorScheme = "auto"
+    hideColorSchemeToggle = false
+    enableTwemoji = true
     maxSeeAlsoItems = 5
     custom_css = []
     custom_js = []
@@ -30,39 +36,41 @@ disqusShortname = "yourdiscussshortname"
   category = "categories"
   series = "series"
   tag = "tags"
+  author = "authors"
 
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github"
+    icon = "fa fa-github"
     weight = 1
     url = "https://github.com/attachmentgenie/"
 [[params.social]]
     name = "Slideshare"
-    icon = "fab fa-slideshare"
-    weight = 1
+    icon = "fa fa-slideshare"
+    weight = 2
     url = "https://www.slideshare.net/attachmentgenie/"
 [[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter"
+    icon = "fa fa-twitter"
     weight = 3
     url = "https://twitter.com/attachmentgenie/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/bram-vogelaar-2316578/"
 
 [languages]
     [languages.en]
-        languagename = "English"
+        languageName = "English"
 
-        [[languages.en.menu.main]]
-        name = "About"
-        weight = 1
-        url = "/about/"
+        [languages.en.menu]
 
-        [[languages.en.menu.main]]
-        name = "Blog"
-        weight = 2
-        url = "/posts/"
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
 
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
