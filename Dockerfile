@@ -2,10 +2,10 @@
 
 # Remember to target specific version in your base image,
 # because you want reproducibility (in a few years you will thank me)
-FROM alpine:3.12.4 AS build
+FROM alpine:3.13.6 AS build
 
 # The Hugo version
-ARG VERSION=0.81.0
+ARG VERSION=0.88.1
 
 ADD https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSION}_Linux-64bit.tar.gz /hugo.tar.gz
 RUN tar -zxvf hugo.tar.gz
