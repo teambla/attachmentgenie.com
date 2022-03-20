@@ -2,10 +2,10 @@
 
 # Remember to target specific version in your base image,
 # because you want reproducibility (in a few years you will thank me)
-FROM alpine:3.13.6 AS build
+FROM alpine:3.14.4 AS build
 
 # The Hugo version
-ARG VERSION=0.88.1
+ARG VERSION=0.95.0
 
 ADD https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_${VERSION}_Linux-64bit.tar.gz /hugo.tar.gz
 RUN tar -zxvf hugo.tar.gz
@@ -22,7 +22,7 @@ WORKDIR /site
 RUN /hugo --minify --enableGitInfo
 
 # stage 2
-FROM nginx:1.21.3-alpine AS run
+FROM nginx:1.21.6-alpine AS run
 
 WORKDIR /usr/share/nginx/html/
 
