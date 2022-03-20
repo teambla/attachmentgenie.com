@@ -13,7 +13,7 @@ pygmentsCodeFencesGuessSyntax = true
     author = "Bram Vogelaar"
     description = "Bram Vogelaar's personal website"
     keywords = "blog,developer,personal"
-    info = "CTO by day, Open Source Enthusiast by night"
+    info = "Cloud Engineer by day, Open Source Enthusiast by night"
     avatarURL = "images/avatar.jpg"
     #gravatar = "john.doe@example.com"
     #footerContent = "Enter a text here."
@@ -58,6 +58,11 @@ pygmentsCodeFencesGuessSyntax = true
     icon = "fa fa-linkedin"
     weight = 4
     url = "https://www.linkedin.com/in/bram-vogelaar-2316578/"
+[[params.social]]
+    name = "Credly"
+    icon = "fa fa-certificate"
+    weight = 4
+    url = "https://www.credly.com/users/bram-vogelaar/badges"
 
 [languages]
     [languages.en]
