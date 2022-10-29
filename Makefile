@@ -1,13 +1,8 @@
+VERSION = $(shell git rev-list --count master)
+GIT_TREE_STATE=$(shell (git status --porcelain | grep -q .) && echo -dev || echo "")
+
 build:
-	docker build --target run .
-
-tag:
-	git tag -f $(VERSION)
-	docker build --target run -t 623762986836.dkr.ecr.us-east-1.amazonaws.com/blog:$(VERSION) .
-
-push:
-	git push --tags
-	docker push 623762986836.dkr.ecr.us-east-1.amazonaws.com/blog:$(VERSION)
+	waypoint build -var="tag=$(VERSION)$(GIT_TREE_STATE)"
 
 update-theme:
 	git submodule update --remote --rebase
