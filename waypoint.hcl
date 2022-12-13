@@ -9,13 +9,13 @@ app "blog" {
     use "docker" {
       target = "run"
     }
-    // registry {
-    //   use "aws-ecr" {
-    //     region = "us-east-1"
-    //     repository = "623762986836.dkr.ecr.us-east-1.amazonaws.com/blog"
-    //     tag = var.tag
-    //   }
-    // }
+    registry {
+      use "aws-ecr" {
+        region = "us-east-1"
+        repository = "623762986836.dkr.ecr.us-east-1.amazonaws.com/blog"
+        tag = var.tag
+      }
+    }
   }
   deploy {
     use "nomad" {
